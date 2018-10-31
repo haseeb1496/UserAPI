@@ -9,13 +9,17 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddUserFormComponent,
     HomePageComponent,
-    MainPageComponent
+    MainPageComponent,
+    ViewUsersComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
