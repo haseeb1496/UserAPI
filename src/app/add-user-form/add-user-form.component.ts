@@ -14,7 +14,7 @@ export class AddUserFormComponent implements OnInit {
   users: any;
 
   constructor(private http: HttpClient, private formBuilder: FormBuilder) {
-    this.http.get('http://127.0.10.1:1360/api/users').subscribe(data => this.users = data);
+    this.http.get('http://localhost:3000/api/users').subscribe(data => this.users = data);
   }
 
   ngOnInit() {
@@ -34,7 +34,8 @@ export class AddUserFormComponent implements OnInit {
     if (this.registerForm.invalid) {
       return;
     } else {
-      this.http.post('http://127.0.10.1:1360/api/users', this.registerForm.value).subscribe();
+      this.http.post('http://localhost:3000/api/users', this.registerForm.value).subscribe();
+      this.registerForm.reset();
     }
   }
 }

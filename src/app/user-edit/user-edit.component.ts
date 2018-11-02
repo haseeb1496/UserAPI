@@ -20,7 +20,7 @@ export class UserEditComponent implements OnInit {
   constructor(private  http: HttpClient, private formBuilder: FormBuilder, private route: ActivatedRoute, private router: Router) {
     this.userId = this.route.snapshot.params.id;
 
-    this.url = 'http://127.0.10.1:1360/api/users/' + this.userId;
+    this.url = 'http://localhost:3000/api/users/' + this.userId;
 
     this.http.get(this.url).subscribe((result: any) => this.editForm.setValue({
       firstName: result.firstName,
@@ -37,9 +37,10 @@ export class UserEditComponent implements OnInit {
     if (this.editForm.invalid) {
       return;
     } else {
-      this.router.navigate(['/home']);
       this.newData = this.editForm.value;
       this.http.put(this.url, this.newData).subscribe();
+      this.router.navigate(['/home/view']);
+
     }
   }
 

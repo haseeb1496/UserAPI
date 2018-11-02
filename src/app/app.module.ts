@@ -11,6 +11,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ViewUsersComponent } from './view-users/view-users.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
+import { ChartPageComponent } from './chart-page/chart-page.component';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { UserEditComponent } from './user-edit/user-edit.component';
     HomePageComponent,
     MainPageComponent,
     ViewUsersComponent,
-    UserEditComponent
+    UserEditComponent,
+    ChartPageComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { UserEditComponent } from './user-edit/user-edit.component';
     BrowserAnimationsModule,
     DemoMaterialModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
