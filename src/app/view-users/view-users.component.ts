@@ -32,7 +32,7 @@ export class ViewUsersComponent implements OnInit {
   delete(id: any) {
     const url = 'http://localhost:3000/api/users/' + id;
     this.http.delete(url)
-      .pipe(switchMap(res => this.http.get('http://127.0.10.1:1360/api/users')))
+      .pipe(switchMap(res => this.http.get('http://localhost:3000/api/users')))
       .subscribe(data => {
         this.users = data;
         this.chgRef.detectChanges();

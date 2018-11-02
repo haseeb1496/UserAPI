@@ -17,7 +17,7 @@ const routes: Routes = [
     ]
   },
   {path: 'home/view/edit/:id', component: UserEditComponent},
-  {path: '**', redirectTo: 'home'}
+  {path: '**', redirectTo: 'home/create'}
     ];
 
 @NgModule({

@@ -39,7 +39,7 @@ export class UserEditComponent implements OnInit {
     } else {
       this.newData = this.editForm.value;
       this.http.put(this.url, this.newData).subscribe();
-      this.router.navigate(['/home/view']);
+      this.router.navigate(['/home/random']);
 
     }
   }
