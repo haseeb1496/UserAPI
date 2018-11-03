@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Prerequisites
 
-- Node Package Manager (npm)
-- MongoDB
+- NodeJS (Link: `https://nodejs.org/en/download/`)
+- MongoDB (Link: `https://docs.mongodb.com/manual/installation/`)
 
 ## Techonologies
 
@@ -20,7 +20,7 @@ The Project uses the following technologies:
 
 ## Running Procedure
 
-Node package manager (npm) and MongoDB must be installed in order to run the Application successfully. Clone the repository to a folder and open a terminal in that folder. Execute 'npm install' command to install the required dependencies. Same must be done for the Back end of the API, link for the Back end content can be found in the 'Back End' section.
+NodeJs and MongoDB must be installed in order to run the Application successfully. Clone the repository to a folder and open a terminal in that folder. Execute 'npm install' command to install the required dependencies. Same must be done for the Back end of the API, link for the Back end content can be found in the 'Back End' section.
 Once the dependencies are installed for both the front-end and the back-end, we must individually start both projects using 'npm start' in seperate terminal windows. Make sure MongoDB service is up and running before fetching or creating any data using the application as it will result in an error. The front-end of the application can be accessed at `localhost:4200` whereas the back-end can be accessed at `localhost:3000`.
 
 ## Back End
