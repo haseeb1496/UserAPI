@@ -2,10 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
-## Techonology
+## Prerequisites
+
+- Node Package Manager (npm)
+- MongoDB
+
+## Techonologies
 
 The Project uses the following technologies:
-- Webstorm
+
 - Angular 2+
 - NodeJS
 - MongoDB
